@@ -13,12 +13,12 @@ export default function Layout() {
   });
 
   if (!fontsLoaded)
-    return <ActivityIndicator className="flex-1 bg-defaultBg" />;
+    return <ActivityIndicator className="bg-defaultBg flex-1" />;
 
   return (
     <>
       <GestureHandlerRootView style={{ flex: 1 }}>
-        <View className="flex-1 px-4 bg-defBg">
+        <View className="flex-1 bg-defBg px-4">
           <Header />
           <Slot />
         </View>

@@ -6,9 +6,9 @@ export const Header = () => {
   return (
     <View
       style={{ paddingTop: currentHeight }}
-      className={"w-full flex flex-row justify-between bg-defBg "}
+      className={"flex w-full flex-row justify-between bg-defBg "}
     >
-      <Avatar className="w-16 h-16">
+      <Avatar className="h-16 w-16">
         <AvatarImage
           source={{
             uri: "https://avatars.githubusercontent.com/u/106037619?v=4",
