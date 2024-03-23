@@ -6,6 +6,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
 import { ActivityIndicator, View } from "react-native";
 import { Header } from "@/components/Header";
+import { BottomTab } from "@/components/BottomTab";
 
 export default function Layout() {
   const [fontsLoaded] = useFonts({
@@ -21,6 +22,7 @@ export default function Layout() {
         <View className="flex-1 bg-defBg px-4">
           <Header />
           <Slot />
+          <BottomTab />
         </View>
         <StatusBar style="light" />
       </GestureHandlerRootView>

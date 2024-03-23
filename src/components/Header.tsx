@@ -1,3 +1,4 @@
+import { EvilIcons } from "@expo/vector-icons";
 import { StatusBar, View } from "react-native";
 import { Avatar, AvatarImage } from "./Avatar";
 
@@ -8,6 +9,8 @@ export const Header = () => {
       style={{ paddingTop: currentHeight }}
       className={"flex w-full flex-row justify-between bg-defBg "}
     >
+      <EvilIcons name="tag" size={48} color="#ffffff" />
+
       <Avatar className="h-16 w-16">
         <AvatarImage
           source={{
